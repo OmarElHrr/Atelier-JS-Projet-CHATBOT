@@ -1,0 +1,24 @@
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #fff !important;
+  }
+
+  form {
+    padding: 20px;
+    padding-inline: 30px;
+  }
+
+  .title {
+    font-family: "Playfair";
+    font-size: 30px;
+    font-style: italic;
+  
+  }
+
+  .btn {
+    background: linear-gradient(98.37deg, #f89e00 0.99%, #da2f68 100%);
+  }
+  
+  .textbtn {
+    
+    color: #fff;
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arr = { un: 1, deux: 2, trois: 3 };
+      for (var key in arr) {
+        var value = arr[key];
+        document.write(key + " = " + value + "<br>");
+      }
+    </script>
+    <script>
+      var arr = [20, 82, 46, 100];
+      for (var i in arr) {
+        document.write(i + "<br>");
+      }
+      document.write("---------------------- <br>");
+      for (var i of arr) {
+        document.write(i + "<br>");
+      }
+    </script>
+    <script>
+      async function* Generator() {
+        var i = 0;
+        while (i < 3) {
+          yield i++;
+        }
+      }
+      (async function () {
+        for await (var j of Generator()) {
+          document.write(j + "<br>");
+        }
+      })();
+    </script>
+  </body>
+</html>
